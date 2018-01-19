@@ -91,7 +91,7 @@ header li {
 }
 .burger_slogan-natural {
     font-family: Lifehack;
-    font-size: 65pt;
+    font-size: 60pt;
     color: white;
 }
 .arrow-scroll {
@@ -103,15 +103,20 @@ header li {
 
 
 /* Вторая страница */
-
-.second-block_lay {
-    width: 960px;
-    height: 400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.second-block {
+    height: 100vh;
+    min-height: 650px;
+    background: url("/images/second_bg.png") no-repeat;
+    background-size: cover;
+    margin: 0;
 }
+ .second-block_wrap {
+     width: 960px;
+     height: 100vh;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+ }
 .we {
     align-content: center;
     margin-top:135px;
@@ -119,4 +124,53 @@ header li {
     font-family: Gagalin;
     font-size: 72px;
     color: #2f3234;
+    margin-bottom: 50px;
+
+}
+.wrap_future {
+    height: 300px;
+    display: flex;
+    width: 960px;
+
+}
+.column {
+    width: 300px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+.future_text-item {
+    text-align: center;
+    vertical-align: top;
+    font-family: Ubuntu;
+    font-size: 14pt;
+    color: #817f7f;
+
+}
+.slogan_item {
+    margin: 10px auto;
+    vertical-align: center;
+    font-family: lifehack;
+    font-size: 24pt;
+    height: 70px;
+    color: #2f3234;
+    font-weight: 10;
+}
+
+
+/* третий блок */
+
+.third-block {
+    height: 100vh;
+    min-height: 650px;
+    background: #4f4f4f;
+    background-size: cover;
+    margin: 0;
+}
+.third-block_wrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.reviews-photos {
 }
