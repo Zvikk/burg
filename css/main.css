@@ -1,20 +1,46 @@
 /* шрифты */
-
 @font-face {
-    font-family: Gagalin;
-    src: url(../fonts/Gagalin/Gagalin-Regular.otf);
-}
-@font-face {
-    font-family: Ubuntu;
-    src: url("https://fonts.googleapis.com/css?family=Ubuntu");
-}
-@font-face {
-    font-family: Lifehack;
-    src: url(../fonts/Lifehack_Medium.otf);
-}
+    font-family: 'Ubuntu';
+    src: url("../fonts/Ubuntu.woff2") format("woff2"), url("../fonts/Ubuntu.woff") format("woff");
+    font-weight: normal;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: 'Ubuntu-Light';
+    src: url("../fonts/Ubuntu-Light.woff2") format("woff2"), url("../fonts/Ubuntu-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url("../fonts/Ubuntu-Bold.woff2") format("woff2"), url("../fonts/Ubuntu-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: 'Ubuntu-Medium';
+    src: url("../fonts/Ubuntu-Medium.woff2") format("woff2"), url("../fonts/Ubuntu-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: 'Gagalin-Regular';
+    src: url("../fonts/Gagalin-Regular.woff2") format("woff2"), url("../fonts/Gagalin-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: 'Lifehack-Medium';
+    src: url("../fonts/Lifehack-Medium.woff2") format("woff2"), url("../fonts/Lifehack-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal; }
  
 
 /* --------------------- */
+
+li {
+    list-style: none;
+}
 
 .wrapper {
     width: 100vw;
@@ -113,6 +139,11 @@ header li {
    bottom: 50px;
    right: 50%;
 }
+.arrow-scroll a {
+    display: block;
+    height: 15px;
+    width: 15px;
+}
 
 
 
@@ -140,6 +171,10 @@ header li {
     color: #2f3234;
     margin-bottom: 50px;
 
+}
+.logo_future {
+    height: 100px;
+    vertical-align: middle;
 }
 .wrap_future {
     height: 300px;
@@ -181,10 +216,216 @@ header li {
     background-size: cover;
     margin: 0;
 }
-.third-block_wrap {
-    width: 100vw;
-    height: 100vh;
+.wrap_reviews {
+    height: 100%;
+    width: 100%;
+    min-height: 650px;
     display: flex;
+    margin: 0;
+    padding: 0;
+    flex-flow: wrap;
 }
-.reviews-photos {
+.reviews_photo {
+    flex-basis: 25%;
+    width: 100%;
+    position: relative;
+    height: 50%;
+    background-position: center;
+    background-size: cover; 
+    filter: grayscale(100%) brightness(100%);
+    transition: 0.7s;
 }
+.cont_wrap_reviews {
+    padding: 20px 50px;
+    height: 100%;
+    width: auto;
+    position: absolute; top: 0; left: 0;
+    z-index: 20;
+    opacity: 0;
+    transition: 0.7s;
+}
+.text_reviews {
+    margin-bottom:60px;
+    height: 40%;
+    font-family: "Ubuntu Lights";
+    color: white;
+    overflow: hidden;
+}
+.reviews_photo:hover {
+    filter: grayscale(100%) brightness(50%);
+    transition: 0.7s;
+}
+.reviews_photo:hover .cont_wrap_reviews {
+    opacity: 100;
+    transition: 0.7s;
+    filter: grayscale(100%) brightness(100%);
+}
+
+
+    .cont_wrap_reviews h5 {
+        font-family: "Gagalin";
+        font-size: 14px;
+        color: white;
+        font-weight: 500;
+    }
+.text_reviews {
+    font-family: "Ubuntu";
+        font-size: 14px;
+        color: white;
+        font-weight: 500;
+}
+.btn_reviews a {
+    margin-top: 20px;
+    text-decoration: none;
+    display: block;
+    height: 35px;
+    width: 110px;
+    background: #2f3234;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    color: white; 
+    font-family: "Ubuntu";
+    font-size: 13px;
+    color: white;
+    font-weight: 500
+}
+
+/* переключатель страниц */
+.navigation {
+    position: fixed;
+    top: 72px;
+    right: 72px;
+    width: 50px;
+    z-index: 1000; }
+.navigation__link {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 21px; }
+.navigation__link:after, .navigation__link:before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        border-radius: 50%; }
+.navigation__link:after {
+        width: 6px;
+        height: 6px;
+        background-color: #fff; }
+.navigation__link:before {
+        width: 0px;
+        height: 0px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        transition: 0.3s; }
+.navigation__link_active:before, .navigation__link:hover:before {
+        width: 16px;
+        height: 16px; }
+
+/* переключатель страниц */
+
+
+
+/* блок-команда */
+
+.team-section {
+    height: 100vh;
+    min-height: 650px;
+    background: url("../images/team-bg.jpg") no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+.team-wrap {
+    height: 100vh;
+    min-height: 650px;
+    width: 100%;
+    position: relative;
+}
+.team_right-column {
+    width: 50%;
+    height: 100%;
+    background: rgba(52, 55, 57, 0.9);
+    position: absolute; top: 0; right: 0;
+}
+.team_wrap-content {
+    width: 380px;
+    /* border: 1px solid yellow; */
+    margin: 150px auto;
+}
+.team_text {
+    font-family: "Gagalin";
+    font-size: 72px;
+    text-align: center;
+    color: #f9b43b;
+    margin-bottom: 50px;
+}
+.team_elem {
+    height: 14px;
+    margin-top: 35px;
+    font-family: "Gagalin";
+    font-size: 14px;
+    color: #f5f5f5;
+}
+.rect {
+    background: url("../images/tri.png") no-repeat;
+    margin-top: 5px;
+    float: left;
+    width: 10px;
+    height: 6px;
+    justify-content: center;
+    /* border: 1px solid yellow; */
+}
+.name_text {
+    margin-left: 10px;
+    font-family: "Gagalin";
+    font-size: 14px;
+    color: #f5f5f5;
+    font-weight: 700;
+    display: inline-block;
+    /* border: 1px solid yellow; */
+} 
+.info_name {
+    margin-top:15px;
+    /* padding: 10px; */
+    display: flex;
+    height: 0px;
+    overflow: hidden;
+    /* border: 1px solid yellow; */
+    box-sizing: border-box;
+}
+.avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.info_emp {
+    margin-left: 20px;
+}
+.position {
+    font-family: "Ubuntu";
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+.full_info {
+    width: 200px;
+    font-family: "Ubuntu";
+    font-size: 14px;
+    color: white;
+    margin-top:10px;
+}
+.active> .name_text {
+    color: #f9b43b;
+}
+.active> .rect {
+    transform: rotate(180deg);
+    color: orange;
+}
+/* блок-команда */
