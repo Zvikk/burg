@@ -1,0 +1,90 @@
+.third-block {
+    height: 100vh;
+    min-height: 650px;
+    background: #4f4f4f;
+    background-size: cover;
+    margin: 0; }
+  
+  .wrap_reviews {
+    height: 100%;
+    width: 100%;
+    min-height: 650px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    -ms-flex-flow: wrap;
+    flex-flow: wrap; }
+  
+  .reviews_photo {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    width: 100%;
+    position: relative;
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    -webkit-filter: grayscale(100%) brightness(100%);
+    filter: grayscale(100%) brightness(100%);
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
+    transition: 0.7s; }
+  
+  .cont_wrap_reviews {
+    padding: 20px 50px;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    opacity: 0;
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
+    transition: 0.7s; }
+  
+  .text_reviews {
+    margin-bottom: 60px;
+    height: 40%;
+    font-family: "Ubuntu-Lights";
+    color: white;
+    overflow: hidden; }
+    .cont_wrap_reviews:hover {
+      opacity: 1;
+      color: white;
+    }
+  .reviews_photo:hover {
+    -webkit-filter: grayscale(100%) brightness(50%);
+    filter: grayscale(100%) brightness(50%);
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
+    transition: 0.7s; }
+
+  .cont_wrap_reviews h5 {
+    font-family: "Gagalin";
+    font-size: 14px;
+    color: white;
+    font-weight: 500; }
+  
+  .text_reviews {
+    font-family: "Ubuntu";
+    font-size: 14px;
+    color: white;
+    font-weight: 500; }
+  
+  .btn_reviews a {
+    margin-top: 20px;
+    text-decoration: none;
+    display: block;
+    height: 35px;
+    width: 110px;
+    background: #2f3234;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-family: "Ubuntu";
+    font-size: 13px;
+    color: white;
+    font-weight: 500; }

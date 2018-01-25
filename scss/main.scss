@@ -1,0 +1,19 @@
+// cofig 
+@import "config/_veriables.scss";
+@import "config/fonts.scss";
+@import "layuot/_base.scss";
+@import "section/best.scss";
+@import "section/hero.scss";
+@import "section/reviews.scss";
+@import "section/team.scss";
+@import "section/menu_sections.scss";
+@import "section/contacts.scss";
+@import "section/fixed_nav.scss";
+
+
+//
+
+ul,li {
+  list-style: none; 
+}
+

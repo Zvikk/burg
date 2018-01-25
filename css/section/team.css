@@ -1,0 +1,105 @@
+.team-section {
+  height: 100vh;
+  min-height: 650px;
+  background: url("../images/team-bg.jpg") no-repeat;
+  background-size: cover;
+  margin: 0; }
+
+.team-wrap {
+  height: 100%;
+  min-height: 650px;
+  width: 100%;
+  position: relative; }
+
+.team_right-column {
+  width: 50%;
+  height: 100%;
+  background: rgba(52, 55, 57, 0.9);
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.team_wrap-content {
+  width: 380px;
+  /* border: 1px solid yellow; */
+  margin: 150px auto;
+  margin-bottom: 0px; }
+
+.team_text {
+  font-family: "Gagalin";
+  font-size: 72px;
+  text-align: center;
+  color: #f9b43b;
+  margin-bottom: 50px; }
+
+.team_elem {
+  /* height: 14px; */
+  margin-top: 30px;
+  font-family: "Gagalin";
+  font-size: 14px;
+  color: #f5f5f5; }
+
+.rect {
+  background: url("../images/tri.png") no-repeat;
+  margin-top: 5px;
+  float: left;
+  width: 10px;
+  height: 6px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /* border: 1px solid yellow; */ }
+
+.name_text a {
+  margin-left: 10px;
+  font-family: "Gagalin";
+  font-size: 14px;
+  color: #f5f5f5;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  /* border: 1px solid yellow; */ }
+
+.info_name {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0px;
+  overflow: hidden;
+  /* border: 1px solid yellow; */ }
+
+.avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover; }
+
+.info_emp {
+  margin-left: 20px; }
+
+.position {
+  font-family: "Ubuntu";
+  font-size: 14px;
+  font-weight: bold;
+  color: white; }
+
+.full_info {
+  width: 200px;
+  font-family: "Ubuntu";
+  font-size: 14px;
+  color: white;
+  margin-top: 10px; }
+
+.active > .name_text a {
+  color: #f9b43b; }
+
+.active > .rect {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  color: orange; }
+
+.active > .info_name {
+  height: auto; }
