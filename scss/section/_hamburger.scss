@@ -1,0 +1,25 @@
+.hamburger {
+    height: 100vh;
+    width: 100vw;
+    background: #f9b33b;
+    background: -moz-linear-gradient(top, #f9b33b 0%, #eb8f38 50%, #f9b33b 100%);
+    background: -webkit-linear-gradient(top, #f9b33b 0%,#eb8f38 50%,#f9b33b 100%);
+    background: linear-gradient(to bottom, #f9b33b 0%,#eb8f38 50%,#f9b33b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b33b', endColorstr='#f9b33b',GradientType=0 );
+
+    &__wrap {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__content-wrap {
+        height: 80%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+    }
+}

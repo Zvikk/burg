@@ -2,18 +2,28 @@
 @import "config/_veriables.scss";
 @import "config/fonts.scss";
 @import "layuot/_base.scss";
-@import "section/best.scss";
-@import "section/hero.scss";
-@import "section/reviews.scss";
-@import "section/team.scss";
-@import "section/menu_sections.scss";
-@import "section/contacts.scss";
-@import "section/fixed_nav.scss";
+@import "section/_best.scss";
+@import "section/_hero.scss";
+@import "section/_reviews.scss";
+@import "section/_team.scss";
+@import "section/_menu_sections.scss";
+@import "section/_contacts.scss";
+@import "section/_fixed_nav.scss";
+@import "section/_order.scss";
+@import "section/_hamburger.scss";
 
 
-//
+
+//resolution
+$tablets: 768px;
+$phones: 470px;
+@mixin tablets {
+  @media screen and (max-width:768px) {
+    
+  }
+}
 
 ul,li {
-  list-style: none; 
+  list-style: none;
 }
 

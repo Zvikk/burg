@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  pad: 0;
+  font-size: 16px;
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif; }
+
+ul, li {
+  margin: 0;
+  pad: 0;
+  list-style: none; }
+
+body, html {
+  height: 100%; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.visuallyHidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
