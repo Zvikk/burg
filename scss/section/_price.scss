@@ -1,0 +1,112 @@
+.price-section {
+    height: 100vh;
+    width: 100vw;
+    background: #f9b33b;
+    background: -moz-linear-gradient(top, #f9b33b 0%, #eb8f38 50%, #f9b33b 100%);
+    background: -webkit-linear-gradient(top, #f9b33b 0%,#eb8f38 50%,#f9b33b 100%);
+    background: linear-gradient(to bottom, #f9b33b 0%,#eb8f38 50%,#f9b33b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b33b', endColorstr='#f9b33b',GradientType=0 );
+
+    &__container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        // border: 1px solid yellow;
+    }
+    .slider {
+        width:90%;
+        height: 80%;
+        margin: 0 auto;
+
+        &__list {
+            height: 100%;
+            overflow: hidden;
+            padding: 0;
+        }
+
+        &__elem {
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+        }
+        &__col {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        &__col-title {
+            font-family: 'Gagalin';
+            font-size: 72px;
+            color: white;
+            text-align: left;
+            margin-bottom: 50px;
+            margin-top: 20px;
+        }
+        &__col-text {
+            margin-bottom: 30px;
+            color: white;
+            font-family: 'Ubuntu';
+            font-weight: 300;
+            line-height: 25px;
+            text-align: left;
+            min-height: 200px;
+            max-height: 350px;
+            overflow: hidden;
+        }
+        &__img {
+            height: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        &__info {
+            display: flex;
+            color: #e45629;
+            font-family: 'Gagalin'; 
+            & .price {
+                font-size: 30px;
+                margin-right: 15px;
+            }
+            & span {
+                font-size: 72px;
+            }
+             & .btn {
+                 margin-top:18px;
+             }
+            }
+            .ccal{
+                height: 80px;
+                width: 80px;
+                position: absolute;
+                left: 0;bottom: 20px;
+                text-align: center;
+                font-family: 'Gagalin';
+                font-size:   14px;
+                opacity: 0.5;
+                color: white;
+
+                & .kkal {
+                    height: 80px;
+                    width: 80px;
+                    fill: white;
+                    position: relative;
+                }
+                .weigh-kkal {
+                    position: absolute;
+                    top: 50%;left:50%;
+                    z-index: 20;
+                    transform: translate(-50%, -50%);
+                    margin-top: 12px;
+                    font-size: 20px;
+                }
+            }
+    }
+}
+
+
+
