@@ -1,5 +1,15 @@
-@mixin circle($width, $colors) {
-    width: $$width;
-    border-radius: $width /2;
-    background-color: $color;
+@function rem($px) {
+    @return $px/16px + 0rem;
+}
+
+@mixin tablets {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width: $phones) {
+        @content;
+    }
 }

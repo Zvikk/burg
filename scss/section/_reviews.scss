@@ -55,8 +55,8 @@
       color: white;
     }
   .reviews_photo:hover {
-    -webkit-filter: grayscale(100%) brightness(50%);
-    filter: grayscale(100%) brightness(50%);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
     -webkit-transition: 0.7s;
     -o-transition: 0.7s;
     transition: 0.7s; }
@@ -88,3 +88,14 @@
     font-size: 13px;
     color: white;
     font-weight: 500; }
+
+    @media (max-width: 768px) {
+      .reviews_photo {
+        height: 25%;
+        flex-basis: 50%;
+      }
+      .text_reviews {
+        height: 25%;
+        display: none;
+      }
+    }

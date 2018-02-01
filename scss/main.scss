@@ -11,17 +11,9 @@
 @import "section/_fixed_nav.scss";
 @import "section/_order.scss";
 @import "section/_hamburger.scss";
+@import "config/_mixins.scss";
 
 
-
-//resolution
-$tablets: 768px;
-$phones: 470px;
-@mixin tablets {
-  @media screen and (max-width:768px) {
-    
-  }
-}
 
 ul,li {
   list-style: none;

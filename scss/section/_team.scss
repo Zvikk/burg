@@ -42,6 +42,7 @@
   .rect {
     background: url("../images/tri.png") no-repeat;
     margin-top: 5px;
+    margin-right: 5px;
     float: left;
     width: 10px;
     height: 6px;
@@ -57,7 +58,9 @@
     color: #f5f5f5;
     font-weight: 700;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+  
     /* border: 1px solid yellow; */ }
   
   .info_name {
@@ -103,3 +106,52 @@
   
   .active > .info_name {
     height: auto; }
+
+    @media (max-width: $tablets) {
+      .team_right-column  {
+        width: 100%;
+      }
+      .team_wrap-content  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .accordeon, .team-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .info_name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .team_text {
+        margin:0;
+        text-align: center;
+      }
+      .team_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .team_elem {
+        text-align: center;
+      }
+      .rect {
+        display: none;
+      }
+      .name_text a::before {
+        content: "";
+        height: 12px;
+        width: 12px;
+        display: flex;
+        margin-right: 5px;
+        background: url("../images/tri.png") no-repeat center center;
+        transform: rotate(180deg);
+      }
+      .active > .name_text a::before {
+        transform: rotate(0deg);
+      }
+}

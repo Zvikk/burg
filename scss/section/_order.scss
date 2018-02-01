@@ -1,7 +1,7 @@
 .order-section {
     height: 100vh;
     width: 100vw;
-    background: url(../images/bg/order_bg.png);
+    background: url(../images/bg/order_bg.png) no-repeat;
     background-size: cover;
 
     &__wrap {
@@ -19,12 +19,7 @@
         font-family: 'Gagalin';
         font-size: 72px;
         color: $orange;
-    }
-    &__form {
-        width:90%;
-        display: flex;
-        font-family: 'Ubuntu';
-        font-weight: 300;
+        margin: 120px auto 50px auto;
     }
     .form-row {
         display: flex;
@@ -32,16 +27,24 @@
         justify-content: space-between;
     }
     .form {
-        width: 50%;
+        width: 90%;
         padding: 5px;
+        display: flex;
+        flex:  1 1 50%;
+        margin-left: auto;
+        justify-content: space-between;
+    }
+    .column-form {
+        width: 95%;
+        margin-left: 10px;
     }
     .form__input {
         border-radius: 5px;
         border: none;
         margin-left: auto;
+        padding: 5px;
         width: 100%;
         height: 35px;
-        margin: 5px;
     }
     .input-text {
         margin-bottom: 5px;
@@ -49,9 +52,11 @@
     }
     .from__block {
         width: 100%;
+        margin-left: 10px;
     }
     .com {
         height: 110px;
+        text-align: top;
     }
     .radio-text {
         color: white;
@@ -59,6 +64,7 @@
     }
     .radio-row {
         margin-top: 20px;
+        margin-left: 10px;
     }
     .order-radio {
         position: absolute;
@@ -128,4 +134,14 @@
     .btn {
         display: inline-block;
     }
+    @media (max-width: 768px) {
+        .form {
+            flex-direction: column;
+        }
+        .order-section__title {
+            font-size: 60px;
+            margin-top: 50px;
+        }
+    }
 }
+

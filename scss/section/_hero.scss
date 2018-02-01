@@ -2,18 +2,19 @@
     height: 100vh;
     min-height: 650px;
     background: url("../images/bg_first.png") no-repeat;
-    background-size: cover; }
+    background-size: cover;
+}
+.hero-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
   
   .second-block {
     height: 100vh;
     min-height: 650px;
     background: url("../images/second_bg.png") no-repeat;
-    background-size: cover; }
-  
-  .first-block_lay {
-    width: 960px;
-    margin: auto;
-    padding-top: 15px; }
+    background-size: cover;
+ }
   
   .header {
     display: -webkit-box;
@@ -21,7 +22,9 @@
     display: flex;
     align-items: center;
     height: 70px;
-    padding: 0 10px 0 10px; }
+    max-width: 960px;
+    padding-top: 20px;
+  }
   
   header li {
     display: inline-block;
@@ -30,8 +33,9 @@
   .menu {
     margin-left: auto;
     margin-right: 15px; 
+    min-width: 690px;
   }
-  
+
   .menu a {
     text-decoration: none;
     font-family: Ubuntu;
@@ -61,26 +65,27 @@
     color: white; }
   
   .burger_wrap {
-    height: 360px;
     margin-top: 60px;
-    width: 880px;
+    min-width: 960px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
   .burger {
-    background: url("../images/burger.png") no-repeat;
-    background-size: cover;
-    height: 100%;
+    background: url("../images/burger.png") no-repeat center;
+    background-size: contain;
     min-width: 457px;
-    width: 457px; }
+  height: 360px; }
   
   .burger_promo {
     height: 100%;
     margin-left: 10px; }
   
   .burger_slogan {
-    font-family: Gagalin;
+    font-family: 'Gagalin';
     font-size: 72px;
     margin-top: 80px;
     color: #f9b43b; }
@@ -93,9 +98,39 @@
   .arrow-scroll {
     position: absolute;
     bottom: 50px;
-    right: 50%; }
+    left: 50%;
+    bottom: 20px; }
+    
   
   .arrow-scroll a {
     display: block;
     height: 15px;
     width: 15px; }
+
+    @media (max-width: $tablets) {
+      .menu {
+        visibility: hidden;
+        min-width: 0px;
+        
+      }
+      .btn {
+        margin-left: auto;
+    }
+    .burger_wrap {
+      flex-direction: column;
+      min-width: 760px;
+      align-items: center; 
+    }
+    .burger {
+      height: 250px;
+    }
+    .burger_slogan {
+      margin: 0;
+      font-size: 50px;
+      text-align: center;
+    }
+    .burger_slogan-natural {
+      font-size: 40px;
+      text-align: center;
+    }
+  }

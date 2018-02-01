@@ -26,13 +26,11 @@
     height: 100%;
     position: absolute;
     top: 0;
-    right: 0;
-    border: 1px solid yellow; }
+    right: 0; }
   
   .accordeon_menu li {
     height: 100%;
     float: left;
-    border: 1px solid yellow;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -75,10 +73,18 @@
     display: block;
     height: 100%;
     width: 100%;
+    padding-top: 25px;
     text-align: left; }
   
   .active .hide_text {
-    width: 100%;
+    width: 20vw;
     overflow: auto;
     padding: 20px;
     background: rgba(52, 55, 57, 0.7); }
+
+    @media (max-width: 768px) {
+      .active .hide_text {
+        width: 0;
+        padding: 0;
+      }
+    }
