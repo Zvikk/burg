@@ -1,4 +1,7 @@
 // cofig 
+@import "config/_mixins.scss";
+@import "config/icomoon.scss";
+@import "config/settings.scss";
 @import "config/_veriables.scss";
 @import "config/fonts.scss";
 @import "layuot/_base.scss";
@@ -11,7 +14,9 @@
 @import "section/_fixed_nav.scss";
 @import "section/_order.scss";
 @import "section/_price.scss";
-@import "config/_mixins.scss";
+@import "section/compos.scss";
+
+
 
 
 
@@ -19,3 +24,6 @@ ul,li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}

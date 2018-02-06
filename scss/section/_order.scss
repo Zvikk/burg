@@ -3,6 +3,8 @@
     width: 100vw;
     background: url(../images/bg/order_bg.png) no-repeat;
     background-size: cover;
+    font-family: 'Ubuntu';
+    font-weight: 300;
 
     &__wrap {
         height: 100%;
@@ -56,6 +58,7 @@
     .from__block {
         width: 100%;
         margin-left: 10px;
+        margin-top:10px;
     }
     .com {
         height: 110px;
@@ -140,6 +143,7 @@
     @media (max-width: 768px) {
         .form {
             flex-direction: column;
+            justify-content: flex-start;
         }
         .order-section__title {
             font-size: 60px;

@@ -3,10 +3,14 @@
     min-height: 650px;
     background: url("../images/bg_first.png") no-repeat;
     background-size: cover;
+    font-family: Ubuntu;
+    font-weight: 300;
 }
 .hero-container {
     max-width: 960px;
     margin: 0 auto;
+    height: 100%;
+    position: relative;
 }
   
   .second-block {
@@ -22,8 +26,10 @@
     display: flex;
     align-items: center;
     height: 70px;
-    max-width: 960px;
-    padding-top: 20px;
+    width: 100%;
+    position: absolute;
+    top: 15px;left: 50%;
+    transform: translate(-50%);
   }
   
   header li {
@@ -38,8 +44,7 @@
 
   .menu a {
     text-decoration: none;
-    font-family: Ubuntu;
-    font-weight: 400;
+    font-size: rem(16px);
     color: white; 
   }
   
@@ -66,33 +71,35 @@
   
   .burger_wrap {
     margin-top: 60px;
-    min-width: 960px;
+    width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     align-items: center;
-    justify-content: center;
+    position: absolute;
+    left: 50%; top:50%;
+    transform: translate(-50%, -50%);
   }
   
   .burger {
     background: url("../images/burger.png") no-repeat center;
     background-size: contain;
-    min-width: 457px;
-  height: 360px; }
+    width: 50%;
+    height: 360px; }
   
   .burger_promo {
     height: 100%;
     margin-left: 10px; }
   
   .burger_slogan {
-    font-family: 'Gagalin';
-    font-size: 72px;
+    font-family: Gagalin;
+    font-size: rem(72px);
     margin-top: 80px;
     color: #f9b43b; }
   
   .burger_slogan-natural {
     font-family: Lifehack;
-    font-size: 60px;
+    font-size: rem(60px);
     color: white; }
   
   .arrow-scroll {
@@ -108,13 +115,23 @@
     width: 15px; }
 
     @media (max-width: $tablets) {
+
+      .hero-container {
+        max-width: 0;
+        margin: 0 auto;
+    }
       .menu {
         visibility: hidden;
-        min-width: 0px;
+        margin-left: 0;
+        display: none;
         
       }
       .btn {
         margin-left: auto;
+    }
+    .header {
+    justify-content: space-between;
+    width: 500px;
     }
     .burger_wrap {
       flex-direction: column;
