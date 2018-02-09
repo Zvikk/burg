@@ -1085,7 +1085,7 @@ header li {
   color: orange;
 }
 
-.team_elem-active > .info_name {
+.active > .info_name {
   height: auto;
 }
 
@@ -1165,7 +1165,7 @@ header li {
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
   }
-  .team_elem-active > .name_text a::before {
+  .active > .name_text a::before {
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
