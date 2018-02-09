@@ -58,6 +58,7 @@
             min-height: 200px;
             max-height: 350px;
             overflow: hidden;
+            padding-right: 25px;
         }
         &__img {
             height: 100%;
@@ -121,15 +122,27 @@
                 &-right {
                     right: 0;
                     transform: rotate(-90deg);
-                    right: -35px;
                 }
             }
     }
 
     @media (max-width: 768px) {
-        .price-section__elem {
+        .slider__elem {
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
         }
+        .slider__col {
+            width: 80%;
+        }
+        .slider__col-title {
+            text-align: center;
+        }
+        .slider__col-text {
+            text-align: center;
+        }
+        
     }
 }
 

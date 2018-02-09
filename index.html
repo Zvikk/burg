@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Бергерленд</title>
 </head>
 <body style='overflow-x:hidden;'>
-        <script src="./js/scripts.js"></script>
     <div class="wrapper">
         <div class="container">
 
@@ -30,6 +30,11 @@
                         </ul>
                         </nav>
                         <div class="btn"><a href="">ЗАКАЗАТЬ</a></div>
+                        <div class="mobile_menu">
+                            <span class="menu_el"></span>
+                            <span class="menu_el"></span>
+                            <span class="menu_el"></span>
+                        </div>
                 </header>
                 <div class="burger_wrap">
                     <div class="burger"></div>
@@ -41,6 +46,23 @@
                 <div class="arrow-scroll">
                     <a href="#" alt="scroll-down"><img src="./images/arrow-scroll.png" href="#" alt=""></a>
                 </div>
+                </div>
+                <div class="modal_menu">
+                    <div class="modal__header">
+                        <div class="log"><img src="./icons/logo.svg" alt=""></div>
+                        <div class="close__btn"></div>
+                    </div>
+
+                    <div class="modal__nav">
+                            <ul class="modal__list">
+                                    <li><a href="" class="modal__link-menu">О НАС</a></li>
+                                    <li><a href="" class="modal__link-menu">БУРГЕРЫ</a></li>
+                                    <li><a href="" class="modal__link-menu">КОМАНДА</a></li>
+                                    <li><a href="" class="modal__link-menu">МЕНЮ</a></li>
+                                    <li><a href="" class="modal__link-menu">ОТЗЫВЫ</a></li>
+                                    <li><a href="" class="modal__link-menu">КОНТАКТЫ</a></li>
+                            </ul>
+                        </div>
                 </div>
             </section>
  
@@ -134,7 +156,12 @@
                     </li>
                    
                 </ul>    
-
+                <div class="modal__reviews">
+                    <div class="modal__reviews-wrap">
+                        <div class="name-reviews"><h5>Константин спилберг</h5></div>
+                        <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam earum mollitia, consequuntur ab ad, autem reprehenderit voluptatum facere voluptatem doloremque praesentium quod eaque inventore eum maxime dolore, est unde tenetur?</div>
+                    </div>
+                </div>
             </section> 
 
                 <!-- бЛОК ГАРМБУРГЕРЫ -->
@@ -423,8 +450,8 @@
             <!-- блок-контакты -->
                 <section class="contacts">
                     <div class="contacts_wrap">
-                        <div class="maps">
-                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A05ee666622988f57f550d980bf132a475820256cbb11224dc73cf72e41e96444&amp;source=constructor" frameborder="0" class="ymaps"></iframe>
+                        <div id="map" class="map">
+                            
                         </div>
                         <div class="footer">
                             <div class="address">  
@@ -494,6 +521,8 @@
 
         </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/ymaps.js"></script>
 </body>
 
 </html>

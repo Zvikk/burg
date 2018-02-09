@@ -7,6 +7,7 @@
   
   .second-block_wrap {
     max-width: 960px;
+    height: 100%;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -59,9 +60,25 @@
     height: 70px;
     color: #2f3234;
     font-weight: 10; }
+    
 
-    @media (max-width: 678px) {
+
+    @media (max-width: $tablets) {
       .future_text-item {
         font-size: 14px;
+      }
+      
+    }
+    @media (max-width: $phones) {
+      .wrap_future {
+        flex-direction: column;
+        align-items: center;
+      }
+      .logo_future {
+        float: left;
+      }
+      .future_text-item {
+        float: right;
+        max-width: 200px;
       }
     }

@@ -89,6 +89,44 @@
     color: white;
     font-weight: 500; }
 
+    .modal__reviews {
+      position: fixed;
+      top: 0;left: -10000px;
+      background-color: rgba(49,50,52, 0.9);
+      z-index: 20;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+    
+    .modal__reviews-wrap {
+      width: 475px;
+      background-color: #fff;
+      position: relative;
+      border-radius: 5px;
+    }
+    .name-reviews {
+      color: #2f3234;
+      font-family: 'Gagalin';
+      margin-left: 20px;
+    }
+    .text-reviews {
+      padding: 20px;
+      font-weight: 300;
+    }
+    .close_reviews {
+      background-image: url(../icons/close.svg);
+      background-size: contain;
+      position: absolute;
+      top:20px;right:20px; 
+      z-index: 20;
+      height: 15px;
+      width: 15px;
+      cursor: pointer;
+    }
+
     @media (max-width: 768px) {
       .reviews_photo {
         height: 25%;
