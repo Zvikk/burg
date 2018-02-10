@@ -1044,6 +1044,10 @@ header li {
   display: flex;
   height: 0px;
   overflow: hidden;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  opacity: 0;
   /* border: 1px solid yellow; */
 }
 
@@ -1087,6 +1091,10 @@ header li {
 
 .active > .info_name {
   height: auto;
+  -webkit-transform: 1s;
+  -ms-transform: 1s;
+  transform: 1s;
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
@@ -1787,8 +1795,6 @@ header li {
   font-weight: 300;
   line-height: 25px;
   text-align: left;
-  min-height: 200px;
-  max-height: 350px;
   overflow: hidden;
   padding-right: 25px;
 }
@@ -1822,38 +1828,6 @@ header li {
   margin-top: 18px;
 }
 
-.price-section .slider .ccal {
-  height: 80px;
-  width: 80px;
-  position: absolute;
-  left: 0;
-  bottom: 20px;
-  text-align: center;
-  font-family: 'Gagalin';
-  font-size: 14px;
-  opacity: 0.5;
-  color: white;
-}
-
-.price-section .slider .ccal .kkal {
-  height: 80px;
-  width: 80px;
-  fill: white;
-  position: relative;
-}
-
-.price-section .slider .ccal .weigh-kkal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 20;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin-top: 12px;
-  font-size: 20px;
-}
-
 .price-section .slider__arrow {
   position: absolute;
   top: 50%;
@@ -1877,6 +1851,38 @@ header li {
   transform: rotate(-90deg);
 }
 
+.price-section .ccal {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  text-align: center;
+  font-family: 'Gagalin';
+  font-size: 14px;
+  opacity: 0.5;
+  color: white;
+}
+
+.price-section .ccal .kkal {
+  height: 80px;
+  width: 80px;
+  fill: white;
+  position: relative;
+}
+
+.price-section .ccal .weigh-kkal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: 12px;
+  font-size: 20px;
+}
+
 @media (max-width: 768px) {
   .price-section .slider__elem {
     -webkit-box-orient: vertical;
@@ -1892,18 +1898,34 @@ header li {
     position: relative;
   }
   .price-section .slider__col {
-    width: 80%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 30%;
+    flex: 1 1 30%;
+    width: 100%;
   }
   .price-section .slider__col-title {
     text-align: center;
+    font-size: 2.5rem;
+    width: 100%;
+    margin: 0;
   }
   .price-section .slider__col-text {
     text-align: center;
+    width: 100%;
+    height: auto;
   }
   .price-section .ccal {
     right: 0;
     left: auto;
     top: 0;
+  }
+  .price-section .slider__info {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .price-section .btn {
+    margin: 0;
   }
 }
 

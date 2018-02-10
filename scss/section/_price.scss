@@ -55,8 +55,6 @@
             font-weight: 300;
             line-height: 25px;
             text-align: left;
-            min-height: 200px;
-            max-height: 350px;
             overflow: hidden;
             padding-right: 25px;
         }
@@ -82,32 +80,7 @@
                  margin-top:18px;
              }
             }
-            .ccal{
-                height: 80px;
-                width: 80px;
-                position: absolute;
-                left: 0;bottom: 20px;
-                text-align: center;
-                font-family: 'Gagalin';
-                font-size:   14px;
-                opacity: 0.5;
-                color: white;
-
-                & .kkal {
-                    height: 80px;
-                    width: 80px;
-                    fill: white;
-                    position: relative;
-                }
-                .weigh-kkal {
-                    position: absolute;
-                    top: 50%;left:50%;
-                    z-index: 20;
-                    transform: translate(-50%, -50%);
-                    margin-top: 12px;
-                    font-size: 20px;
-                }
-            }
+            
 
             &__arrow {
                 position: absolute;
@@ -125,7 +98,32 @@
                 }
             }
     }
+    .ccal{
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        left: 0;bottom: 20px;
+        text-align: center;
+        font-family: 'Gagalin';
+        font-size:   14px;
+        opacity: 0.5;
+        color: white;
 
+        & .kkal {
+            height: 80px;
+            width: 80px;
+            fill: white;
+            position: relative;
+        }
+        .weigh-kkal {
+            position: absolute;
+            top: 50%;left:50%;
+            z-index: 20;
+            transform: translate(-50%, -50%);
+            margin-top: 12px;
+            font-size: 20px;
+        }
+    }
     @media (max-width: 768px) {
         .slider__elem {
             flex-direction: column;
@@ -134,15 +132,31 @@
             position: relative;
         }
         .slider__col {
-            width: 80%;
+            flex: 1 1 30%;
+            width: 100%;
         }
         .slider__col-title {
             text-align: center;
+            font-size: rem(40px);
+            width: 100%;
+            margin: 0;
         }
         .slider__col-text {
             text-align: center;
+            width: 100%;
+            height: auto;
         }
-        
+        .ccal {
+            right: 0;
+            left:auto;
+            top:0;
+        }
+        .slider__info {
+            justify-content: center;
+        }
+        .btn {
+            margin: 0;
+        }
     }
 }
 

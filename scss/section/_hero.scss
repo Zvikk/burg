@@ -144,8 +144,9 @@
       align-items: center;
     }
     .close__btn {
-      background: url('../images/close.png');
+      background: url('../icons/close.svg');
       height: 18px;
+      color: #fff;
       width: 18px;
       background-size: contain;
       margin-left: auto;
@@ -161,7 +162,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 250px;
+  margin-top: 100px;
   font-size: rem(24px);
 }
 .modal__link-menu {
