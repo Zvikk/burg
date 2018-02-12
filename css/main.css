@@ -1268,10 +1268,13 @@ header li {
   text-align: left;
 }
 
-.active .hide_text {
+.active > .hide_text {
   width: 20vw;
   overflow: auto;
   padding: 20px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   background: rgba(52, 55, 57, 0.7);
 }
 
@@ -1529,6 +1532,14 @@ header li {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.order-section .form__input {
+  outline: none;
+}
+
+.order-section .form__input:focus {
+  border: 1px solid #e45028;
 }
 
 .order-section .column-form {
