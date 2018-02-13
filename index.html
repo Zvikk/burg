@@ -15,7 +15,7 @@
 <body style='overflow-x:hidden;'>
     <div class="wrapper">
         <div class="container" id="fullpage">
-            <section class="section first-block">
+            <section class="section first-block" data-anchor="hero">
                 <div class="hero-container">
                 <header class="header">
                     <div class="logo"><img src="./icons/logo.svg" alt=""></div>
@@ -45,31 +45,14 @@
                     </div>
                 </div>
                 <div class="arrow-scroll">
-                    <a href="#" alt="scroll-down">
+                    <a href="#best" alt="scroll-down">
                         <img src="./images/arrow-scroll.png" href="#" alt="">
                     </a>
                 </div>
                 </div>
-                <div class="modal_menu">
-                    <div class="modal__header">
-                        <div class="log"></div>
-                        <div class="close__btn"></div>
-                    </div>
-
-                    <div class="modal__nav">
-                            <ul class="modal__list">
-                                    <li><a href="" class="modal__link-menu">О НАС</a></li>
-                                    <li><a href="" class="modal__link-menu">БУРГЕРЫ</a></li>
-                                    <li><a href="" class="modal__link-menu">КОМАНДА</a></li>
-                                    <li><a href="" class="modal__link-menu">МЕНЮ</a></li>
-                                    <li><a href="" class="modal__link-menu">ОТЗЫВЫ</a></li>
-                                    <li><a href="" class="modal__link-menu">КОНТАКТЫ</a></li>
-                            </ul>
-                        </div>
-                </div>
             </section>
 
-            <section class="section second-block">
+            <section class="section second-block" data-anchor="best">
                 <div class="second-block_wrap">
                     <div class="we">МЫ ЛУЧШИЕ</div>
                                 <div class="wrap_future">
@@ -93,7 +76,7 @@
                 </div>
             </section> 
 
-            <section class="third-block section">
+            <section class="third-block section" data-anchor="reviews">
 
                 <ul class="wrap_reviews">
                     <li class="reviews_photo" style="background-image: url(images/reviews/1.jpg);"  >
@@ -162,7 +145,7 @@
                 </div>
             </section> 
 
-            <section class="price-section section">
+            <section class="price-section section" data-anchor="price">
                     <div class="price-section__container">
                         <div class="slider">
 
@@ -536,7 +519,7 @@
                     </div>
             </section>
       
-            <section class="team-section section">
+            <section class="team-section section" data-anchor="team">
                 <div class="team-wrap">
                     <div class="team_right-column">
                         <div class="team_wrap-content">
@@ -598,7 +581,7 @@
                 </div>
             </section>
 
-            <section class="menu_section section">
+            <section class="menu_section section" data-anchor="menu">
                     <div class="wrap_menu">
                         <div class="menu-text">МЕНЮ</div>
                         <div class="accordeon_menu">
@@ -613,7 +596,7 @@
                                 </li>
                                 <li class="menu_elem active">
                                     <a href="" class="menu-link" style="background-image: url(images/vegan_menu.png);">
-                                        <span>Вегитарианское</span>
+                                        <span>вегетарианское</span>
                                     </a>
                                     <div class="hide_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab sapiente, recusandae doloremque laudantium
                                         nam! Aspernatur suscipit quas similique unde vel delectus totam quaerat id ducimus, molestias tenetur,
@@ -632,7 +615,7 @@
                     </div>
             </section>
 
-            <section class="order-section section">
+            <section class="order-section section" data-anchor="order">
                 <div class="order-section__wrap">
                     <div class="order-section__title">Закажите доставку</div>
                     <form action="" class="form">
@@ -722,7 +705,7 @@
                 </div>
             </section>
 
-            <section class="contacts">
+            <section class="contacts section" data-anchor="contacts">
                     <div class="contacts_wrap section">
                         <div id="map" class="map">
                             
@@ -756,49 +739,77 @@
         </div>
     </div>
 
-     <!-- навигация по странице -->
-     <div class="navigation">
-        <ul class="navigation__list">
-            <li class="navigation__elem">
-                <a href="#hero-section" class="navigation__link navigation__link_active">
+    
+    <div class="modal_menu">
+        <div class="modal__header">
+            <div class="log"></div>
+            <div class="close__btn"></div>
+        </div>
+    
+        <div class="modal__nav">
+            <ul class="modal__list">
+                <li>
+                    <a href="" class="modal__link-menu">О НАС</a>
+                </li>
+                <li>
+                    <a href="" class="modal__link-menu">БУРГЕРЫ</a>
+                </li>
+                <li>
+                    <a href="" class="modal__link-menu">КОМАНДА</a>
+                </li>
+                <li>
+                    <a href="" class="modal__link-menu">МЕНЮ</a>
+                </li>
+                <li>
+                    <a href="" class="modal__link-menu">ОТЗЫВЫ</a>
+                </li>
+                <li>
+                    <a href="" class="modal__link-menu">КОНТАКТЫ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <ul class="navigation__list" id="globalNav">
+            <li class="navigation__elem active" data-menuanchor="hero">
+                <a href="#hero" class="navigation__link active">
                 </a>
             </li>
-            <li class="navigation__elem">
-                <a href="/#best-section" class="navigation__link">
+            <li class="navigation__elem" data-menuanchor="best">
+                <a href="#best" class="navigation__link">
                 </a>
             </li>
-            <li class="navigation__elem">
-                <a href="#" class="navigation__link">
+            <li class="navigation__elem" data-menuanchor="reviews">
+                <a href="#reviews" class="navigation__link">
                 </a>
             </li>
-            <li class="navigation__elem">
-                <a href="#" class="navigation__link">
+            <li class="navigation__elem" data-menuanchor="price">
+                <a href="#price" class="navigation__link">
                 </a>
             </li>
-            <li class="navigation__elem">
-                <a href="#" class="navigation__link">
+            <li class="navigation__elem" data-menuanchor="team">
+                <a href="#team" class="navigation__link">
                 </a>
             </li>
-            <li class="navigation__elem">
-                <a href="#" class="navigation__link">
+            <li class="navigation__elem" data-menuanchor="menu">
+                <a href="#menu" class="navigation__link">
                 </a>
             </li>
-            <li class="navigation__elem">
-                <a href="#" class="navigation__link">
+            <li class="navigation__elem" data-menuanchor="order">
+                <a href="#order" class="navigation__link">
                 </a>
             </li>
-            <li class="navigation__elem">
-                <a href="#" class="navigation__link">
+            <li class="navigation__elem" data-menuanchor="contacts">
+                <a href="#contacts" class="navigation__link">
                 </a>
             </li>
         </ul>
     </div>
-    <!-- навигация по странице -->
+
 
     <script src="./js/scripts.js"></script>
     <script src="./js/ymaps.js"></script>
-    <script src="./js/team.js"></script>
-    <script src="./js/menu_acco.js"></script>
 </body>
 
 </html>

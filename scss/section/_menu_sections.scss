@@ -76,10 +76,11 @@
     padding-top: 25px;
     text-align: left; }
   
-  .active .hide_text {
+  .active > .hide_text {
     width: 20vw;
     overflow: auto;
     padding: 20px;
+    transition: 0.2s;
     background: rgba(52, 55, 57, 0.7); }
 
     @media (max-width: 768px) {

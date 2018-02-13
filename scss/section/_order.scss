@@ -36,6 +36,12 @@
         font-size: rem(16px);
         justify-content: space-between;
     }
+    .form__input {
+        outline: none;
+    }
+    .form__input:focus {
+        border: 1px solid #e45028;
+    }
     .column-form {
         width: 95%;
         margin-left: 10px;
