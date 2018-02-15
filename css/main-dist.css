@@ -588,6 +588,7 @@ header li {
   display: block;
   height: 35px;
   width: 100px;
+  margin-left: 15px;
   background: #e45028;
   text-align: center;
   line-height: 35px;
@@ -2032,7 +2033,7 @@ header li {
   height: 100vh;
   width: 100vw;
   position: fixed;
-  top: 0;
+  top: -0;
   left: 0;
   background-color: rgba(47, 50, 52, 0.92);
   z-index: 200;
