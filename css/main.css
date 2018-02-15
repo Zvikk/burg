@@ -894,6 +894,9 @@ header li {
   text-decoration: none;
   display: block;
   height: 35px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   width: 110px;
   background: #2f3234;
   line-height: 35px;
@@ -904,6 +907,10 @@ header li {
   font-size: 13px;
   color: white;
   font-weight: 500;
+}
+
+.btn_reviews:hover a {
+  background: #212324;
 }
 
 .modal__reviews {
