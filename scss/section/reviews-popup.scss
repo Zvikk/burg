@@ -1,0 +1,43 @@
+.reviews_popup {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(47,50, 52, 0.92);
+    z-index: 200;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    &-container {
+        width: 455px;
+        height: 255px;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        position: relative;
+    }
+}
+.reviews-author {
+    margin-top: 10px;
+    font-family: gagalin;
+    font-size: rem(14px);
+    color: $dark;
+}
+.reviews-comment {
+    font-size: rem(14px);
+    font-family: ubuntu;
+    font-weight: 300;
+    color: $dark;
+    line-height: rem(24px);
+}
+.close-reviews {
+    background-image: url(../icons/close.svg);
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}

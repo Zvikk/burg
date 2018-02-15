@@ -25,7 +25,8 @@
     display: -ms-flexbox;
     display: flex;
     align-items: center;
-    height: 70px;
+    justify-content: center;
+    // height: 70px;
     width: 100%;
     position: absolute;
     top: 15px;left: 50%;
@@ -34,17 +35,17 @@
   
   header li {
     display: inline-block;
-    margin-left: 18px; }
+    margin-left: 18px;
+    line-height:10px;
+   }
   
   .menu {
-    margin-left: auto;
-    margin-right: 15px; 
-    min-width: 690px;
+    margin-left: auto; 
+    // min-width: 650px;
   }
-
   .menu a {
     text-decoration: none;
-    font-size: rem(16px);
+    font-size: 0.8125rem;
     color: white; 
   }
   
@@ -53,8 +54,8 @@
     margin-right: 15px;
     color: white; }
   
-  .menu li:nth-child(1)::before {
-    content: "";
+  .menu li:first-child:before {
+    content: none;
     color: white; }
   
   .btn a {
@@ -165,11 +166,14 @@
   position: absolute;
   font-size: rem(24px);
 }
+.modal__list:last-child + .modal__list-li:after  {
+  content: none;
+}
 .modal__link-menu {
   color: white;
   display: block;
 }
-.modal__link-menu::after {
+.modal__list-li:after {
   content: "";
   border-radius: 50%;
   background: #fff;
