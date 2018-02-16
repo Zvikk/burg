@@ -45,12 +45,14 @@
     width: 0;
     overflow: hidden;
     height: 100%;
+    transition: 0.5s;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     color: white; }
   
   .menu_elem {
-    max-width: 50%; }
+    max-width: 50%;
+ }
   
   .menu_elem a {
     text-decoration: none;
@@ -80,7 +82,6 @@
     width: 20vw;
     overflow: auto;
     padding: 20px;
-    transition: 0.2s;
     background: rgba(52, 55, 57, 0.7); }
 
     @media (max-width: 768px) {

@@ -78,6 +78,7 @@
     text-decoration: none;
     display: block;
     height: 35px;
+    transition: 0.5s;
     width: 110px;
     background: #2f3234;
     line-height: 35px;
@@ -87,7 +88,11 @@
     font-family: "Ubuntu";
     font-size: 13px;
     color: white;
-    font-weight: 500; }
+    font-weight: 500; 
+  }
+  .btn_reviews:hover a {
+    background: #212324;
+  }
 
     .modal__reviews {
       position: fixed;
