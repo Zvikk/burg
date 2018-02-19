@@ -1883,7 +1883,7 @@ header li {
 }
 
 .price-section .slider__arrow-left {
-  left: -35px;
+  left: -5px;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -1941,6 +1941,9 @@ header li {
     -ms-flex-align: center;
     align-items: center;
     position: relative;
+  }
+  .price-section .slider__img {
+    height: 200px;
   }
   .price-section .slider__col {
     -webkit-box-flex: 1;

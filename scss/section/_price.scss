@@ -93,7 +93,7 @@
                 width:30px;
 
                 &-left {
-                    left:-35px;
+                    left:-5px;
                     transform: rotate(90deg);
                 }
                 &-right {
@@ -134,6 +134,9 @@
             justify-content: center;
             align-items: center;
             position: relative;
+        }
+        .slider__img {
+            height: 200px;
         }
         .slider__col {
             flex: 1 1 30%;
