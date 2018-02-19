@@ -86,6 +86,11 @@
                 top: 50%;
                 transform: translate(0 , -50%);
                 z-index: 2;
+                background-image: url(../icons/arrow-scroll.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 30px;
+                width:30px;
 
                 &-left {
                     left:-35px;
