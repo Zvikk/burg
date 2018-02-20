@@ -1233,6 +1233,7 @@ header li {
   height: 100%;
   position: absolute;
   top: 0;
+  width: 100vw;
   right: 0;
 }
 
@@ -1248,6 +1249,13 @@ header li {
 .accordeon_menu ul {
   padding: 0;
   margin: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   height: 100%;
 }
 
@@ -1599,6 +1607,7 @@ header li {
 }
 
 .order-section .com {
+  resize: none;
   height: 110px;
   text-align: top;
 }
